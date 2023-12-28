@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">Contacts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button [routerLink]="['/add-contact']">ADD</ion-button>
+  <ion-list>
+    <ion-item button *ngFor="let item of allContacts">
+      <ion-label>
+        {{ item.firstName}} {{" "}} {{item.lastName}}
+        <p>
+          {{item.phoneNumber}}
+
+
+        </p>
+      </ion-label>
+      <ion-icon name="close-outline" color="danger" (click)="deleteContacts(item._id)"></ion-icon>
+      <ion-icon name="create-outline" color="primary" slot="end" [routerLink]="['/updatecontact/',item._id]"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

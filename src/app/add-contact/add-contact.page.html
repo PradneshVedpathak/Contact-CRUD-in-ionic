@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="primary">Add Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input id="custom-input" label="First Name" labelPlacement="floating" [counter]="true" minlength="2"
+    [(ngModel)]="firstName"></ion-input>
+  <ion-input id="custom-input" label="Last Name" labelPlacement="floating" [counter]="true" minlength="2"
+    [(ngModel)]="lastName"></ion-input>
+  <ion-item>
+    <ion-input id="custom-input" type="tel" placeholder="888-888-8888" minlength="10" maxlength="10"
+      [(ngModel)]="phoneNumber"></ion-input>
+  </ion-item>
+  <ion-button color="success" (click)="addContact()">Submit</ion-button>
+  <ion-button color="medium" [routerLink]="['/all-contacts']">Cancel</ion-button>
+</ion-content>

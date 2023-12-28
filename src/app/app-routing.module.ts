@@ -3,13 +3,21 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    redirectTo: 'all-contacts',
+    pathMatch: 'full'
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'all-contacts',
+    loadChildren: () => import('./all-contacts/all-contacts.module').then(m => m.AllContactsPageModule)
+  },
+  {
+    path: 'add-contact',
+    loadChildren: () => import('./add-contact/add-contact.module').then(m => m.AddContactPageModule)
+  },
+  {
+    path: 'updatecontact/:id',
+    loadChildren: () => import('./update-contact/update-contact.module').then(m => m.UpdateContactPageModule)
   },
 ];
 
