@@ -1,5 +1,5 @@
 {
-  "name": "Ionic-crud-app",
+  "name": "Contact Manager",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -26,6 +26,7 @@
     "@capacitor/core": "5.6.0",
     "@capacitor/haptics": "5.0.6",
     "@capacitor/keyboard": "5.0.7",
+    "@capacitor/splash-screen": "^5.0.6",
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
     "ionicons": "^7.0.0",
@@ -43,7 +44,7 @@
     "@angular/cli": "^17.0.0",
     "@angular/compiler-cli": "^17.0.2",
     "@angular/language-service": "^17.0.2",
-    "@capacitor/cli": "5.6.0",
+    "@capacitor/cli": "^5.6.0",
     "@ionic/angular-toolkit": "^9.0.0",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

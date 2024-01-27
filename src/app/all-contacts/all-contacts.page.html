@@ -5,6 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
   <ion-button [routerLink]="['/add-contact']">ADD</ion-button>
   <ion-list>
     <ion-item button *ngFor="let item of allContacts">

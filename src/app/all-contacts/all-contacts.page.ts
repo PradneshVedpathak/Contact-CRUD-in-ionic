@@ -53,5 +53,11 @@ export class AllContactsPage {
     });
   }
 
+  handleRefresh(event: { target: { complete: () => void; }; }) {
+    setTimeout(() => {
+      this.loadContacts();
+      event.target.complete();
+    }, 2000);
+  }
 
 }
