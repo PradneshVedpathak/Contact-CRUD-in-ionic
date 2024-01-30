@@ -1,7 +1,7 @@
 {
-  "name": "Contact Manager",
+  "name": "contact.manager",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Pradnesh Vedpathak",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
